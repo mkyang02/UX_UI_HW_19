@@ -65,6 +65,28 @@ ul li:hover::after { /*the hover feature*/
     }
 
 /*BUTTON STYLE*/
+.btn-primary-override {
+    text-decoration: none;
+    color: #000000 !important;
+    background-color: white !important;
+    border-color: black !important;
+    border-radius: 20px !important;
+    position: relative !important;
+    cursor: pointer !important;
+    font-size: 15px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
+
+}
+.btn-primary-override:hover, 
+.btn-primary-override:active,
+.btn-primary-override:focus,
+.btn-primary-override:visited {
+    background-color: #fc434a !important;
+    border-color: #fc434a !important;
+    background-image: none !important;
+    border: 0 !important;
+}
 
 
 
@@ -73,7 +95,11 @@ ul li:hover::after { /*the hover feature*/
     width: 80%;
     margin:auto;
     text-align: center;
-    padding-top: 50px;  
+    padding-top: 50px;
+}
+
+.container-fluid {
+    border: 0 !important;
 }
 
 
@@ -105,10 +131,6 @@ ul li:hover::after { /*the hover feature*/
   
   .cardContainer {
     text-align: left;
-  }
-
-  .btnCard {
-    float: center;
   }
 
 /*-----FOOTER SECTION------*/
