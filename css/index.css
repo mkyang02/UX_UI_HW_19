@@ -1,40 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
+h1, h2, h3, h4, h5, h6 p {
+    font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
-/* BELOW IS THE CSS FOR NAVIGATION */
-nav {
+
+p {
+    font-size: 15px;
+    font-weight: 250;
+}
+/*NAVIGATION STYLE*/
+.customNav {
     display: flex;
     padding: 2% 6%;
-    justify-content: space-between;
+    margin: 0;
     align-items: center;
+    justify-content: right;
+  }
+
+.customNav img {
+ width: 80px;
+ margin: 10px;
+ padding-right: 15px;
 }
 
-nav img {
-  width: 100px;
-}
-
-.nav-links {
-    flex: 1;
-    text-align: right;
-}
-
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-
-.nav-links ul li a {
+.customNav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     color: black;
     text-decoration: none;
-    font-size: 13px;
 }
 
-/*BELOW IS THE HOVER UNDERLINE*/
-.nav-links ul li::after {
+ul li::after {
     content: '';
     width: 0%; /*visibility of the underline red*/
     height: 2px;
@@ -44,142 +39,77 @@ nav img {
     transition: 0.5s; /*the hover feature*/
 }
 
-.nav-links ul li:hover::after { /*the hover feature*/
+ul li:hover::after { /*the hover feature*/
     width: 100%;
+    color: #fc434a;
 }
 
-
-/* BELOW IS THE CSS FOR AND HERO IMAGE & TEXT*/
-.header {
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(../images/hero-image-portfolio.jpg);
-    background-position: center;
+/*JUMBOTRON STYLE*/
+.jumbotron {
+    background-image: url("../images/hero-image-portfolio.jpg");
     background-size: cover;
-    position: relative;
-}
+    background-repeat: no-repeat;
+    height: 500px;
+    height: calc(100vh - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .jumboCopy {
+      width: 80%;
+      min-width: 500px;
+      max-width: 900px;
+      color: white;
+      text-align: right;
+    }
 
-.text-box {
-width: 90%;
-color: #ffffff;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: right;
-}
+/*BUTTON STYLE*/
 
-.text-box h1 {
-    font-size:  50px;
-}
-.text-box p {
-    margin:10px 0 40px;
-    font-size: 14px;
-    color: #ffffff;
-}
 
-/* -----MY UX SKILLS SECTION------*/
+
+/*MY SKILLS*/
 .skills {
     width: 80%;
     margin:auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;  
 }
 
-h1 {
-    font-size: 36px;
-    font-weight: 600;
-}
 
-p {
-    color: black;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
- /*----MY UX SKILLS USING CSS GRIDS----*/
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 300px 300px;
-    grid-gap: 10px;
-    background-color: none;
-    padding: 10px;
-  }
-  
-  .grid-container > div {
-    background-color: #fc434962;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    border-radius: 15px;
-    
-  }
-
-  h3 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-/*-----MY WORK SECTION------*/
-.work {
+/*MY WORK*/
+.myWork {
     width: 80%;
     margin:auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 50px;  
 }
 
-.work-container-left {
-    margin: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.work-container-right {
-    margin: 5%;
-    display: flex;
-    flex-direction:row-reverse;
-    
-}
-
-.work-container-left img {
-    width: 50%;
-}
-
-.work-text-right {
-    margin: 15px;
+/* Cards BELOW */
+.cardContainer {
+    margin-top: 20px;
+  }
+  .card {
+    margin: 0 auto;
+    border-radius: none;
+    border-style: none;
+  }
+  
+  .content {
+    padding: 50px;
+  }
+   
+  .showsNear {
+    padding: 0px 30px 30px 30px;
+  }
+  
+  .cardContainer {
     text-align: left;
-}
+  }
 
-.work-text-left {
-    margin: 15px;
-    text-align: left;
-}
-
-.imgLeft {
-    width: 50%;
-}
-
-.work-button {
-    display: inline-block;
-    text-decoration: none;
-    color: #000000;
-    border: 1px solid #5e5e5e;
-    border-radius: 15px;
-    padding: 5px 20px;
-    font-size: 12px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-.work-button:hover {
-    border: 1px solid #fc434a;
-    background: #fc434a;
-    transition: 1s;
-}
-
+  .btnCard {
+    float: center;
+  }
 
 /*-----FOOTER SECTION------*/
 
