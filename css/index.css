@@ -64,7 +64,8 @@ ul li:hover::after { /*the hover feature*/
       text-align: right;
     }
 
-/*BUTTON STYLE*/
+
+/*Button*/
 .btn-primary-override {
     text-decoration: none;
     color: #000000 !important;
@@ -74,19 +75,15 @@ ul li:hover::after { /*the hover feature*/
     position: relative !important;
     cursor: pointer !important;
     font-size: 15px !important;
-    font-family: 'Open Sans', sans-serif !important;
     font-family: 'Poppins', sans-serif !important;
-
 }
-.btn-primary-override:hover, 
-.btn-primary-override:active,
-.btn-primary-override:focus,
-.btn-primary-override:visited {
+
+.btn-primary-override:hover {
     background-color: #fc434a !important;
     border-color: #fc434a !important;
     background-image: none !important;
-    border: 0 !important;
 }
+
 
 
 
